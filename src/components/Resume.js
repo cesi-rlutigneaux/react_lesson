@@ -4,11 +4,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import Abstract from "./Abstract";
-import ExperienceList from "./ExperienceList";
-import FormationList from "./FormationList";
-import PersonalInformation from "./PersonalInformation";
-import SkillList from "./SkillList";
+import Abstract from "./Abstract/Abstract";
+import ExperienceList from "./Experience/ExperienceList";
+import FormationList from "./Formation/FormationList";
+import PersonalInformation from "./PersonalInformation/PersonalInformation";
+import SkillList from "./Skill/SkillList";
 
 function Resume() {
   return (

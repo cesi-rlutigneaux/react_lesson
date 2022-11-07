@@ -1,4 +1,4 @@
-import "../styles/FormationList.css";
+import "../../styles/Formation/FormationList.css";
 
 function FormationList() {
   return (

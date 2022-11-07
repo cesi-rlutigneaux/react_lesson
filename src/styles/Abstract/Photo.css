@@ -1,0 +1,12 @@
+.photo{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.image-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }

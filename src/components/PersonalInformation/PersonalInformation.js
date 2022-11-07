@@ -1,8 +1,10 @@
-import "../styles/PersonalInformation.css";
+import "../../styles/PersonalInformation/PersonalInformation.css";
+import Photo from "./Photo";
 
 function PersonalInformation() {
   return (
     <div className="PersonalInformation">
+      <Photo></Photo>
       <p>PersonalInformation</p>
     </div>
   );

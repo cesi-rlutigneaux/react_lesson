@@ -1,4 +1,4 @@
-import "../styles/ExperienceList.css";
+import "../../styles/Experience/ExperienceList.css";
 
 function ExperienceList() {
   return (
