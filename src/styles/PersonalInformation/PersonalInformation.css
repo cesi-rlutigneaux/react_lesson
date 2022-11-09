@@ -1,5 +1,6 @@
 .PersonalInformation{
     background-color: rgba(253, 253, 43, 0.884);
-    height: 88vh;
+    height: 100%;
     margin-top: 20px;
+    padding-left: 20px;
 }
