@@ -11,8 +11,8 @@ function FormationList() {
       {formationList.map(
         (formation, index) =>
           formation.display && (
-            <ul>
-              <Formation formation={formation} key={index} />
+            <ul key={index}>
+              <Formation formation={formation} />
             </ul>
           )
       )}

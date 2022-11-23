@@ -8,8 +8,8 @@ function SkillList() {
   return (
     <div className="SkillList">
       <h3>Compétences</h3>
-      {skillList.map((sk) => (
-        <div>
+      {skillList.map((sk, index) => (
+        <div key={index}>
           <Skill sk={sk} />
           <br></br>
         </div>
