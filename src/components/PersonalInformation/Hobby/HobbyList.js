@@ -2,9 +2,10 @@ import { hobbyList } from "../../../datas/HobbyList";
 
 import "../../../styles/PersonalInformation/Hobby/HobbyList.css";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Hobby from "./Hobby";
 import { Modal, Button, Row, Col } from "react-bootstrap";
+import { Context } from "../../Context";
 
 function HobbyList() {
   const [show, setShow] = useState(false);
@@ -12,6 +13,8 @@ function HobbyList() {
   const [count, setCount] = useState(0);
   const [hobbyName, setHobbyName] = useState("");
   const [hobbyImg, setHobbyImg] = useState("");
+
+  const [context] = useContext(Context);
 
   const handleClose = () => {
     setShow(false);
@@ -63,8 +66,8 @@ function HobbyList() {
       </Button>
       <br></br>
       <div>
-        <p>You clicked {count} times</p>
-        <ContainerButtons count={count} countIncrement={countIncrement} />
+        <p>You clicked {context} times</p>
+        <ContainerButtons />
       </div>
 
       <Modal show={show} onHide={handleClose}>
@@ -111,29 +114,32 @@ function HobbyList() {
   );
 }
 
-function ContainerButtons({ count, countIncrement }) {
+function ContainerButtons() {
   return (
     <>
       <h1>ContainerButtons</h1>
-      <ButtonList count={count} countIncrement={countIncrement} />
+      <ButtonList />
     </>
   );
 }
 
-function ButtonList({ count, countIncrement }) {
+function ButtonList() {
   return (
     <>
       <h2>ButtonList</h2>
-      <AddButton count={count} countIncrement={countIncrement} />
+      <AddButton />
     </>
   );
 }
 
-function AddButton({ count, countIncrement }) {
+function AddButton() {
+  const [context, setContext] = useContext(Context);
   return (
     <>
-      <h3>AddButton {count}</h3>
-      <button onClick={() => countIncrement(1)}>Click me</button>
+      <h3>AddButton {context}</h3>
+      <Button variant="outline-dark" onClick={() => setContext(context + 1)}>
+        Click me and see the magic...
+      </Button>
     </>
   );
 }

@@ -1,14 +1,14 @@
-import logo from "../assets/logo.png";
-
+import React, { useState } from "react";
 import Resume from "./Resume";
-
+import { Context } from "./Context.js";
 import "../styles/App.css";
 
 function App() {
+  const [context, setContext] = useState(0);
   return (
-    <div>
+    <Context.Provider value={[context, setContext]}>
       <Resume />
-    </div>
+    </Context.Provider>
   );
 }
 
