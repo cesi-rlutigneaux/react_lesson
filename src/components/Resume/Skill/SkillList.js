@@ -1,6 +1,6 @@
-import "../../styles/Skill/SkillList.css";
+import "../../../styles/Resume/Skill/SkillList.css";
 
-import { skillList } from "../../datas/SkillList";
+import { skillList } from "../../../datas/SkillList";
 
 import Skill from "./Skill";
 

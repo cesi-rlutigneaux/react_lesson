@@ -1,4 +1,4 @@
-import "../../../styles/PersonalInformation/Hobby/Hobby.css";
+import "../../../../styles/Resume/PersonalInformation/Hobby/Hobby.css";
 
 function handleClick(name) {
   console.log("Loisir selectionné : ", name);

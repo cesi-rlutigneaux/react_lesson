@@ -1,8 +1,8 @@
-import { experienceList } from "../../datas/ExperienceList";
+import { experienceList } from "../../../datas/ExperienceList";
 
 import Experience from "./Experience";
 
-import "../../styles/Experience/ExperienceList.css";
+import "../../../styles/Resume/Experience/ExperienceList.css";
 
 function ExperienceList() {
   return (

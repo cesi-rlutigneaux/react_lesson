@@ -1,5 +1,5 @@
-import "../../styles/PersonalInformation/Photo.css";
-import photo from "../../assets/Viking.png";
+import "../../../styles/Resume/PersonalInformation/Photo.css";
+import photo from "../../../assets/Viking.png";
 
 function Photo() {
   return (

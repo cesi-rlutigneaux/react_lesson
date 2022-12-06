@@ -1,5 +1,5 @@
-import "../../styles/PersonalInformation/Language.css";
-import { language } from "../../datas/Language";
+import "../../../styles/Resume/PersonalInformation/Language.css";
+import { language } from "../../../datas/Language";
 
 function Language() {
   return (

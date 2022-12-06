@@ -1,4 +1,4 @@
-import "../../styles/Formation/Formation.css";
+import "../../../styles/Resume/Formation/Formation.css";
 
 function Formation({ formation }) {
   return (

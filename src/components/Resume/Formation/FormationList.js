@@ -1,6 +1,6 @@
-import { formationList } from "../../datas/FormationList";
+import { formationList } from "../../../datas/FormationList";
 
-import "../../styles/Formation/FormationList.css";
+import "../../../styles/Resume/Formation/FormationList.css";
 
 import Formation from "./Formation";
 

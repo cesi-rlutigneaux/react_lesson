@@ -1,4 +1,4 @@
-import "../styles/Resume.css";
+import "../../styles/Resume/Resume.css";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";

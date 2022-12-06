@@ -1,4 +1,4 @@
-import "../../styles/PersonalInformation/PersonalInformation.css";
+import "../../../styles/Resume/PersonalInformation/PersonalInformation.css";
 import Photo from "./Photo";
 import Language from "./Language";
 import HobbyList from "./Hobby/HobbyList";

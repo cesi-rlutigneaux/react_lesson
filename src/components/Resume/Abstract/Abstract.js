@@ -1,4 +1,4 @@
-import "../../styles/Abstract/Abstract.css";
+import "../../../styles/Resume/Abstract/Abstract.css";
 
 function Abstract() {
   return (

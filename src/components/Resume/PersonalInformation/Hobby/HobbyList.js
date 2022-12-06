@@ -1,11 +1,11 @@
-import { hobbyList } from "../../../datas/HobbyList";
+import { hobbyList } from "../../../../datas/HobbyList";
 
-import "../../../styles/PersonalInformation/Hobby/HobbyList.css";
+import "../../../../styles/Resume/PersonalInformation/Hobby/HobbyList.css";
 
 import React, { useState, useEffect, useContext } from "react";
 import Hobby from "./Hobby";
 import { Modal, Button, Row, Col } from "react-bootstrap";
-import { Context } from "../../Context";
+import { Context } from "../../../Context";
 
 function HobbyList() {
   const [show, setShow] = useState(false);
