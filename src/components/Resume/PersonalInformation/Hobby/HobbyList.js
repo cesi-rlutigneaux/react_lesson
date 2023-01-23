@@ -9,7 +9,12 @@ import { Context } from "../../../Context";
 
 function HobbyList() {
   const [show, setShow] = useState(false);
-  const [list, setList] = useState(hobbyList);
+  const [list, setList] = useState(() => {
+    const saved = localStorage.getItem("hobbyListSaved");
+    const hobbyListSaved = JSON.parse(saved);
+    console.log("hobbyListSaved", hobbyListSaved);
+    return hobbyListSaved || hobbyList;
+  });
   const [count, setCount] = useState(0);
   const [hobbyName, setHobbyName] = useState("");
   const [hobbyImg, setHobbyImg] = useState("");
@@ -33,6 +38,7 @@ function HobbyList() {
   function handleAdd() {
     const newList = list.concat({ name: hobbyName, img: hobbyImg });
     setList(newList);
+    localStorage.setItem("hobbyListSaved", JSON.stringify(newList));
   }
 
   const counter = () => {
