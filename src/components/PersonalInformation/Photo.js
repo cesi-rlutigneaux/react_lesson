@@ -1,4 +1,4 @@
-import "../../styles/Abstract/Photo.css";
+import "../../styles/PersonalInformation/Photo.css";
 import photo from "../../assets/Viking.png";
 
 function Photo() {
