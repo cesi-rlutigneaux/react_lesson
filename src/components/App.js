@@ -9,7 +9,7 @@ import "../styles/App.css";
 
 function App() {
   const [context, setContext] = useState(0);
-  const name = "Lutti Master";
+  const name = "Lutti";
 
   return (
     <Context.Provider value={[context, setContext]}>
